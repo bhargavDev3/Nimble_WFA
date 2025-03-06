@@ -26,7 +26,10 @@ def create_log_file(client_name, date):
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <h1 class="text-4xl font-bold text-center mb-8">App Server Tasks Report</h1>
+        <div class="table-container animate__animated animate__fadeIn">
+            <h1 class="text-3xl font-bold text-center mb-2">App_Server Tasks Report</h1>
+            <!-- DB Log Body (keep content minimal and relevant) -->
+        </div>
         <title>Deployment Logs - {client_name} - {date}</title>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
