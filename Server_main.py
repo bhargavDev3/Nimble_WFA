@@ -1,16 +1,17 @@
 # Server_main.py
 import os
 # Common variables for App_server
-client_name = "Demo"  # Client name
-date = "55022025"  # Today date
-app_pool_name = f"{client_name}_{date}"
+client_name = "Hallmark"  # Client name
+date = "05/03/2025"  # Today date,    format sholud be like:  03/12/2024  day month year
+app_pool_date = date.replace("/", "")
+app_pool_name = f"{client_name}_{app_pool_date}"
 site_name = client_name
 application_name = "OCRWEBAPI"  # Application name under client site
 
 # Paths for App_server
 WINRAR_PATH = r"C:\Program Files\WinRAR\WinRAR.exe"
-New_Build_Source = r"C:/Production_release/NewBuild_13022025/NewBuild"  # Change with New Build path
-base_path = r"C:\Production1"  # Change with client base path from C drive
+New_Build_Source = r"C:/ProductionRealease/NewBuild_13022025/NewBuild_13022025/NewBuild"  # Change with New Build path
+base_path = r"C:\Production2"  # Change with client base path from C drive
 completion_flag_file = os.path.join(base_path, "copy_paste_completed.flag")
 
 # Common variables for DataBase_server
