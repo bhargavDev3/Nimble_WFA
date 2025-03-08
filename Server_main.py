@@ -2,7 +2,7 @@
 import os
 # Common variables for App_server
 client_name = "Hallmark"  # Client name
-date = "06/03/2025"  # Today date,    format sholud be like:  03/12/2024  day month year
+date = "08/03/2025"  # Today date,    format sholud be like:  03/12/2024  day month year
 app_pool_date = date.replace("/", "")
 app_pool_name = f"{client_name}_{app_pool_date}"
 site_name = client_name
